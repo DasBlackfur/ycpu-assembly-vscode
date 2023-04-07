@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "yCPU Assembly",
+	"patterns": [
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "entity.name.class",
+				"match": "\\b(NOOP|AND|OR|NOT|ADD|SUB|MUL|DIV|SL|SR|RL|RR|COPY|COMPEQ|COMPGT|COMPLT)\\b"
+			},
+			{
+				"name": "constant",
+				"match": "#\\h+"
+			},
+			{
+				"name": "entity.name.function",
+				"match": "\\$\\w*"
+			}
+			]
+		}
+	},
+	"scopeName": "source.ycpu-asm"
+}

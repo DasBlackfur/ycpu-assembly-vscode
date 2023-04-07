@@ -1,0 +1,25 @@
+{
+  "name": "ycpu-assembly",
+  "displayName": "yCPU Assembly",
+  "description": "Provides basic support for yCPU assembly",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ycpu-asm",
+      "aliases": ["yCPU Assembly", "ycpu-asm"],
+      "extensions": [".asm",".ysm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ycpu-asm",
+      "scopeName": "source.ycpu-asm",
+      "path": "./syntaxes/ycpu-asm.tmLanguage.json"
+    }]
+  }
+}
