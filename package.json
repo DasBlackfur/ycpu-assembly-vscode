@@ -2,6 +2,7 @@
   "name": "ycpu-assembly",
   "displayName": "yCPU Assembly",
   "description": "Provides basic support for yCPU assembly",
+  "publisher": "blackfur",
   "repository": {
     "type": "git",
     "url": "https://github.com/DasBlackfur/ycpu-assembly-vscode"
