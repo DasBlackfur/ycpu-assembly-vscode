@@ -19,6 +19,14 @@
 			{
 				"name": "entity.name.function",
 				"match": "\\$\\w*"
+			},
+			{
+				"name": "variable",
+				"match": "\\:\\w*"
+			},
+			{
+				"name": "comment",
+				"match": "\\/.*"
 			}
 			]
 		}
