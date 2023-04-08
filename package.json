@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/DasBlackfur/ycpu-assembly-vscode"
   },
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.77.0"
   },
@@ -15,16 +15,26 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "ycpu-asm",
-      "aliases": ["yCPU Assembly", "ycpu-asm"],
-      "extensions": [".asm",".ysm"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "ycpu-asm",
-      "scopeName": "source.ycpu-asm",
-      "path": "./syntaxes/ycpu-asm.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "ycpu-asm",
+        "aliases": [
+          "yCPU Assembly",
+          "ycpu-asm"
+        ],
+        "extensions": [
+          ".asm",
+          ".ysm"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ycpu-asm",
+        "scopeName": "source.ycpu-asm",
+        "path": "./syntaxes/ycpu-asm.tmLanguage.json"
+      }
+    ]
   }
 }
