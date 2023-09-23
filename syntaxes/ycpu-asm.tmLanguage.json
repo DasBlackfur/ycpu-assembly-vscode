@@ -22,11 +22,15 @@
 			},
 			{
 				"name": "variable",
-				"match": "\\:\\w*"
+				"match": "\\:(?:0|1)+"
 			},
 			{
 				"name": "comment",
-				"match": "\\/.*"
+				"match": "\\//.*"
+			},
+			{
+				"name": "string",
+				"match": "(\\+|-)\\h+"
 			}
 			]
 		}
